@@ -9,7 +9,7 @@ function CallToAction() {
             {/* Illustration */}
             <div className="order-2 md:order-1">
               <img
-                src="dist/assets/2.jpeg"
+                src="../dist/assets/2.jpeg"
                 alt="Online therapy session illustration"
                 className="w-full rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300"
               />
