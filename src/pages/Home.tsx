@@ -1,4 +1,7 @@
-import React from 'react';
+import img2 from "../assets/2.jpeg";  // مسار الصورة حسب مكان الكود
+
+
+
 import { useNavigate } from 'react-router-dom';
 import Features from '../components/Features';
 import About from '../components/About';
@@ -38,12 +41,14 @@ function Home() {
           
           {/* Image - Left Side */}
           <div style={{ width: "50%" }} className="order-1 md:order-2">
-          <img 
-              src="../../src/dist/assets/2.jpeg"
-              alt="Mental health support"
-              className="w-full rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300"
-              style={{ width: "70%" }}
-            />
+         <img 
+  src={img2} 
+  alt="Image"  
+  className="w-full rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300"
+  style={{ width: "70%" }} 
+/>
+
+          
           </div>
         </div>
       </div>
