@@ -39,7 +39,7 @@ function Home() {
           {/* Image - Left Side */}
           <div style={{ width: "50%" }} className="order-1 md:order-2">
           <img 
-              src="../../src/dist/assets/2.jpeg" 
+              src="../../src/dist/assets/2.jpeg"
               alt="Mental health support"
               className="w-full rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300"
               style={{ width: "70%" }}
