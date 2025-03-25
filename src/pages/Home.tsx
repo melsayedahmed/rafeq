@@ -34,7 +34,7 @@ function Home() {
                 onClick={handleStartNow}
                 className="mt-8 bg-cyan-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-cyan-600 transition-all duration-200 transform hover:scale-105"
               >
-                ابدأ الآن
+                ابداء الان 
               </button>
             </div>
           </div>

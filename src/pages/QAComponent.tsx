@@ -1,5 +1,5 @@
-import React from 'react';
 import { Brain, Heart, Users, Shield, Download, Apple, SmartphoneNfc, MessageSquare } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const questions = [
     {
@@ -39,9 +39,9 @@ const QAComponent = () => {
                 <span className="font-semibold">{q.author}</span>
               </div>
               <div className="mt-3 flex justify-start">
-              <a href="/QaAnswer" className="mt-3 bg-cyan-500 text-white px-4 py-2 rounded-md hover:bg-cyan-600 transition text-center">
+              <Link to={"/QaAnswer"} className="mt-3 bg-cyan-500 text-white px-4 py-2 rounded-md hover:bg-cyan-600 transition text-center">
   إجابة الطبيب
-</a>
+</Link>
 
               </div>
             </div>
