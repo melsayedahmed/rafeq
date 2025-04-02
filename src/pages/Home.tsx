@@ -1,4 +1,4 @@
-import img2 from "../assets/2.jpeg";  // مسار الصورة حسب مكان الكود
+import img2 from "../assets/mainpic.png";  // مسار الصورة حسب مكان الكود
 
 
 

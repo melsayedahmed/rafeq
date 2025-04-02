@@ -1,4 +1,6 @@
-import React from 'react';
+import img2 from "../assets/2.jpeg"; // مسار الصورة حسب مكان الكود
+
+import React from "react";
 
 function CallToAction() {
   return (
@@ -7,13 +9,15 @@ function CallToAction() {
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Illustration */}
+            {/* Image - Left Side */}
             <div className="order-2 md:order-1">
               <img
-                src="../dist/assets/2.jpeg"
-                alt="Online therapy session illustration"
+                src={img2}
+                alt="Image"
                 className="w-full rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300"
+                style={{ width: "70%" }}
               />
-              
+
               {/* Payment Methods */}
               <div className="mt-12 flex items-center justify-center space-x-8">
                 <img
