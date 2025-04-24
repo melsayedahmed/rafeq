@@ -25,8 +25,6 @@ function Header() {
 
           {/* Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <NavLink to="/contact" icon={<MessageCircle />} text="اتصال" isActive={location.pathname === '/contact'} />
-            <NavLink to="/about" icon={<Info />} text="عن رفيق  " isActive={location.pathname === '/about'} />
             <NavLink to="/QAComponent" icon={<Info />} text="الاسئله   " isActive={location.pathname === '/QAComponent'} />
             {/* <NavLink to="/QaAnswer" icon={<Info />} text="QaAnswer   " isActive={location.pathname === '/QaAnswer'} /> */}
             <NavLink to="/articles" icon={<FileText />} text="مقالات" isActive={location.pathname === '/articles'} />
@@ -54,8 +52,6 @@ function Header() {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t">
             <div className="flex flex-col space-y-4">
-              <MobileNavLink to="/contact" icon={<MessageCircle />} text="اتصال" isActive={location.pathname === '/contact'} />
-              <MobileNavLink to="/about" icon={<Info />} text="عن رفيق  " isActive={location.pathname === '/about'} />
               <MobileNavLink to="/QAComponent" icon={<Info />} text="الاسئله " isActive={location.pathname === '/QAComponent'} />
               <MobileNavLink to="/articles" icon={<FileText />} text="مقالات" isActive={location.pathname === '/articles'} />
               <MobileNavLink to="/faq" icon={<HelpCircle />} text="معلومات عن رفيق" isActive={location.pathname === '/faq'} />
