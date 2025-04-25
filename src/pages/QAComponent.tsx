@@ -5,40 +5,39 @@ const questions = [
     {
       id: 1,
       question: "كيف أعرف أنني مصاب باضطراب الوسواس القهري؟",
-      author: "د. محمد أحمد",
       date: "2025-03-18",
     },
     {
       id: 2,
       question: "كيف يؤثر التوتر المستمر على الصحة النفسية والجسدية؟",
-      author: "د. محمد أحمد",
       date: "2025-03-18",
     },
     {
       id: 3,
       question: "هل الاضطرابات النفسية وراثية؟",
-      author: "د. محمد أحمد",
       date: "2025-03-18",
     },
   ];
-  
-  
+
 const QAComponent = () => {
     return (
       <div className="p-6 max-w-5xl mx-auto text-right rtl flex gap-6"style={{ display: "flex", justifyContent: "center", flexDirection: "row-reverse" }}>
-        <h2 className="text-lg font-semibold text-cyan-600 mb-4">أسئلة وأجوبة</h2>
+         <h2 className="text-lg font-semibold text-cyan-600 mb-4">أسئلة وأجوبة</h2>
         <div className="flex flex-col gap-4">
           {questions.map((q) => (
             <div
               key={q.id}
               className="bg-white shadow-md rounded-lg p-4 border border-gray-200 flex flex-col"
             >
-              <p className="text-gray-700 text-md font-medium">{q.question}</p>
-              <div className="mt-2 text-sm text-gray-500 flex justify-between">
-                <span>{q.date}</span>
-                <span className="font-semibold">{q.author}</span>
+               <div className="text-sm text-gray-500 flex justify-between items-center">
+                 <span className="order-1">{q.date}</span>
               </div>
+
+              
+              <p className="text-gray-700 text-md font-medium">{q.question}</p>
+
               <div className="mt-3 flex justify-start">
+
               <Link to={"/QaAnswer"} className="mt-3 bg-cyan-500 text-white px-4 py-2 rounded-md hover:bg-cyan-600 transition text-center">
   إجابة الطبيب
 </Link>

@@ -8,6 +8,7 @@ import FAQ from './pages/FAQ';
 import QRCode from './pages/QRCode';
 import QAComponent from './pages/QAComponent';
 import QaAnswer from './pages/QaAnswer';
+import ArticleDetail from './pages/ArticleDetail';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/QAComponent" element={<QAComponent />} />
         <Route path="/QaAnswer" element={<QaAnswer />} />
         <Route path="/download" element={<QRCode />} />
+        <Route path="/article/:id" element={<ArticleDetail />} />
 
       </Routes>
       <Footer />

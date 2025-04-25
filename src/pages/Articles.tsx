@@ -1,5 +1,6 @@
 import React from 'react';
 import { Clock, Heart, MessageCircle } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface Article {
   id: number;
@@ -51,41 +52,43 @@ const articles: Article[] = [
 
 function ArticleCard({ article }: { article: Article }) {
   return (
-    <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-      <img 
-        src={article.image} 
-        alt={article.title}
-        className="w-full h-48 object-cover"
-      />
-      <div className="p-6">
-        <h3 className="text-xl font-bold mb-3 text-gray-800 hover:text-cyan-500 transition-colors duration-200">
-          {article.title}
-        </h3>
-        <p className="text-gray-600 mb-4">
-          {article.excerpt}
-        </p>
-        <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
-          <div className="flex items-center">
-            <Clock className="w-4 h-4 ml-1" />
-            {article.readTime}
+    <Link to={`/article/${article.id}`} >
+      <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <img
+          src={article.image}
+          alt={article.title}
+          className="w-full h-48 object-cover"
+        />
+        <div className="p-6">
+          <h3 className="text-xl font-bold mb-3 text-gray-800 hover:text-cyan-500 transition-colors duration-200">
+            {article.title}
+          </h3>
+          <p className="text-gray-600 mb-4">
+            {article.excerpt}
+          </p>
+          <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
+            <div className="flex items-center">
+              <Clock className="w-4 h-4 ml-1" />
+              {article.readTime}
+            </div>
+            <span>{article.date}</span>
           </div>
-          <span>{article.date}</span>
-        </div>
-        <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-4">
-            {/* <button className="flex items-center text-gray-500 hover:text-red-500 transition-colors duration-200">
-              <Heart className="w-5 h-5 ml-1" />
-              <span>{article.likes}</span>
-            </button> */}
-            {/* <button className="flex items-center text-gray-500 hover:text-cyan-500 transition-colors duration-200">
-              <MessageCircle className="w-5 h-5 ml-1" />
-              <span>{article.comments}</span>
-            </button> */}
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-4">
+              {/* <button className="flex items-center text-gray-500 hover:text-red-500 transition-colors duration-200">
+                <Heart className="w-5 h-5 ml-1" />
+                <span>{article.likes}</span>
+              </button> */}
+              {/* <button className="flex items-center text-gray-500 hover:text-cyan-500 transition-colors duration-200">
+                <MessageCircle className="w-5 h-5 ml-1" />
+                <span>{article.comments}</span>
+              </button> */}
+            </div>
+            {/* <span className="text-cyan-500 font-medium">{article.author}</span> */}
           </div>
-          {/* <span className="text-cyan-500 font-medium">{article.author}</span> */}
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 
