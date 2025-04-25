@@ -57,7 +57,7 @@ const ArticleDetail: React.FC = () => {
             <img
               src={article.image}
               alt={article.title}
-              className="w-full h-auto object-cover rounded-2xl mb-8"
+              className="object-cover rounded-2xl mb-8" style={{width:'65%',height:'fit-content',margin:'auto',display:'block'}}
             />
             <h1 className="text-3xl font-bold text-gray-800 mb-4">{article.title}</h1>
             <div className="text-gray-600 mb-6">
